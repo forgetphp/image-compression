@@ -1,0 +1,61 @@
+{
+    "name": "chenhong/image-compression",
+    "description": "An image compression library",
+    "type": "library",
+    "license": "MIT",
+    "keywords":[
+        "php",
+        "image",
+        "libwebp",
+        "webp",
+        "image compression"
+    ],
+    "authors": [
+        {
+            "name": "forgetphp",
+            "email": "747825455@qq.com",
+            "role":"Developer"
+        }
+    ],
+    "support":{
+        "email":"747825455@qq.com"
+    },
+    "minimum-stability": "stable",
+    "autoload":{
+        "psr-4":{
+            "Image\\":"src/"
+        },
+        "files":[
+
+        ]
+    },
+    "autoload-dev":{
+        "psr-4":{
+            "ImageTest\\":"tests/"
+        }
+    },
+    "require": {
+        "php":">=7.2",
+        "hyperf/event": "^2.0",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "require-dev":{
+        "symfony/console": "^5.2",
+        "symfony/var-dumper": "^5.2",
+        "swoole/ide-helper": "^4.5",
+        "friendsofphp/php-cs-fixer": "^2.14",
+        "phpunit/phpunit": "^9.5"
+    },
+    "suggest":{
+
+    },
+    "bin":[
+        "bin/cwebp",
+        "bin/cjpeg",
+        "bin/jpegtran"
+    ],
+    "scripts": {
+        "cs-fix": "php-cs-fixer fix $1",
+        "test": "phpunit --colors=always"
+    }
+}
