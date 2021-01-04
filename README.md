@@ -124,7 +124,7 @@ $result = $image->->output();
 
 #### 例子
 ```php
- $result = ImageFactory::create($config)
+$result = ImageFactory::create($config)
     ->input( 'demo.jpg' )
     ->output( );
 ```
