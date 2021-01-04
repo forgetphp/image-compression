@@ -1,5 +1,5 @@
 ### PHP JPEG Encoder Project
-该项目是基于**[libwebp](https://github.com/webmproject/libwebp)** , **[mozjpeg](https://github.com/mozilla/mozjpeg)** 实现的。PHP的 `gd` 库,或者是 `imagick` 压缩比、性能都不如前者。
+该项目是基于 **[libwebp](https://github.com/webmproject/libwebp)** , **[mozjpeg](https://github.com/mozilla/mozjpeg)** 实现的。PHP的 `gd` 库,或者是 `imagick` 压缩比、性能都不如前者。
 如果需要转化成异步模式则需要 [Swoole](https://www.swoole.com/) 提供的 `Hook` 功能将命令转为 CLI 模式。
 
 #### 运行环境
@@ -135,7 +135,7 @@ $result = $image->->output();
 
 | 原图 | Webp  | mozjpeg | imagick(jpg) | imagick(webp)
 |---|---|---|---|---|
-| <img src="./"/> | <img src=""/> | <img src=""/> | <img src=""/> | 
+| ![image](https://github.com/forgetphp/image-compression/blob/main/example/origin.jpeg) | ![image](https://github.com/forgetphp/image-compression/blob/main/example/webp.webp) |![image](https://github.com/forgetphp/image-compression/blob/main/example/cjpeg.jpeg)| ![image](https://github.com/forgetphp/image-compression/blob/main/example/imagck.jpeg) | ![image](https://github.com/forgetphp/image-compression/blob/main/example/imagck_webp.webp) | 
 | 压缩比 | 85% | 83% | 52% | 72% |
 
 #### 兼容
