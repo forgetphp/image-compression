@@ -20,7 +20,7 @@
     "support":{
         "email":"747825455@qq.com"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "autoload":{
         "psr-4":{
             "Image\\":"src/"
